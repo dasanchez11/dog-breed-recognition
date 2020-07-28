@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/dog-breed-recognition/static/css/main.3c9457cb.chunk.css",
-    "main.js": "/dog-breed-recognition/static/js/main.7459ce3d.chunk.js",
-    "main.js.map": "/dog-breed-recognition/static/js/main.7459ce3d.chunk.js.map",
+    "main.js": "/dog-breed-recognition/static/js/main.76af42b6.chunk.js",
+    "main.js.map": "/dog-breed-recognition/static/js/main.76af42b6.chunk.js.map",
     "runtime-main.js": "/dog-breed-recognition/static/js/runtime-main.95f1eb60.js",
     "runtime-main.js.map": "/dog-breed-recognition/static/js/runtime-main.95f1eb60.js.map",
     "static/css/2.3c03f26f.chunk.css": "/dog-breed-recognition/static/css/2.3c03f26f.chunk.css",
     "static/js/2.e8704024.chunk.js": "/dog-breed-recognition/static/js/2.e8704024.chunk.js",
     "static/js/2.e8704024.chunk.js.map": "/dog-breed-recognition/static/js/2.e8704024.chunk.js.map",
     "index.html": "/dog-breed-recognition/index.html",
-    "precache-manifest.deee69f4ecf111a3d133296021150be0.js": "/dog-breed-recognition/precache-manifest.deee69f4ecf111a3d133296021150be0.js",
+    "precache-manifest.633d9f7f45f91440483950d17f5e3221.js": "/dog-breed-recognition/precache-manifest.633d9f7f45f91440483950d17f5e3221.js",
     "service-worker.js": "/dog-breed-recognition/service-worker.js",
     "static/css/2.3c03f26f.chunk.css.map": "/dog-breed-recognition/static/css/2.3c03f26f.chunk.css.map",
     "static/css/main.3c9457cb.chunk.css.map": "/dog-breed-recognition/static/css/main.3c9457cb.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.3c03f26f.chunk.css",
     "static/js/2.e8704024.chunk.js",
     "static/css/main.3c9457cb.chunk.css",
-    "static/js/main.7459ce3d.chunk.js"
+    "static/js/main.76af42b6.chunk.js"
   ]
 }
