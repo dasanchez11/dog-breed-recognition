@@ -1,6 +1,6 @@
 {
   "name": "dog-recognition",
-  "homepage":"https://github.io/dasanchez11/dog-breed-recognition",
+  "homepage":"https://dasanchez11.github.io/dog-breed-recognition/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
