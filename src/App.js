@@ -96,7 +96,7 @@ displayProbabilities = (box) =>{
     let message = {
                 image: this.state.imagemessage
             }
-          fetch('https://stark-castle-65949.herokuapp.com/predecir',{
+          fetch('/predecir',{
             method:'post',
             headers:{'Content-Type':'application/json'},
             body: JSON.stringify(message)
