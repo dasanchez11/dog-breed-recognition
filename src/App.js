@@ -62,7 +62,6 @@ class App extends Component {
   }
 
   calculateProbabilities =(data) =>{
-    console.log(data.prediction.uno)
     return {
     first: data.prediction.uno.replace(/_/g," "),
     second: data.prediction.dos.replace(/_/g," "),
@@ -73,6 +72,14 @@ class App extends Component {
 
 displayProbabilities = (box) =>{
   this.setState({box:box})
+};
+
+ convertImageToCanvas = (image) => {
+   var canvas = document.createElement("canvas");
+   canvas.width = image.width;
+   canvas.height = image.height;
+   canvas.getContext("2d").drawImage(image, 0, 0);
+	return canvas;
 }
 
   onInputChange = (event) =>{
@@ -80,6 +87,9 @@ displayProbabilities = (box) =>{
     let reader = new FileReader();
     reader.onload = (event) => {
         let dataURL = reader.result;
+        let nLetters = dataURL.indexOf(";")
+        let text = dataURL.slice(0,nLetters)
+        dataURL = dataURL.replace(text,"data:image/jpeg")
         let base64Image = dataURL.replace("data:image/jpeg;base64,","");
         base64Image = base64Image.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/g, '');
         this.setState({input:dataURL})
@@ -103,7 +113,6 @@ displayProbabilities = (box) =>{
           })
         .then(response => response.json())
         .then(response => {
-          console.log(response)
           if(response){
             fetch('https://limitless-wave-40652.herokuapp.com/image',{
               method:'put',
