@@ -1,31 +1,34 @@
 import React, {Component} from 'react';
 import './App.css';
 import Navigation from './components/Navigation/Navigation';
+import Slider2 from './components/Slider/Slider2';
 import Logo from './components/Logo/Logo';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import Rank from './components/Rank/Rank';
 import SignIn from './components/SignIn/SignIn';
 import Register from './components/Register/Register'
-import Particles from 'react-particles-js';
+// import Particles from 'react-particles-js';
 
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import Probabilities from './components/Probabilities/Probabilities';
 
 
 
-const particlesOptions = {
-  particles: {
-    number:{
-      value:30,
-      density:{
-        enable:true,
-        value_area:800
+// const particlesOptions = {
+//   particles: {
+//     number:{
+//       value:30,
+//       density:{
+//         enable:true,
+//         value_area:800
+//
+//       }
+//
+//     }
+//   }
+// }
 
-      }
-
-    }
-  }
-}
+//'rote: signin'
 
 const initialState = {
   input:'',
@@ -74,13 +77,6 @@ displayProbabilities = (box) =>{
   this.setState({box:box})
 };
 
- convertImageToCanvas = (image) => {
-   var canvas = document.createElement("canvas");
-   canvas.width = image.width;
-   canvas.height = image.height;
-   canvas.getContext("2d").drawImage(image, 0, 0);
-	return canvas;
-}
 
   onInputChange = (event) =>{
 
@@ -140,11 +136,12 @@ displayProbabilities = (box) =>{
       this.setState({route:route})
   }
 
+// <Particles className='particles' params={particlesOptions}/>
   render() {
     const {isSignedIn, imageUrl,route,box, final} = this.state;
     return(
     <div>
-      <Particles className='particles' params={particlesOptions}/>
+
       <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange}/>
       {route==='home'
       ? (
