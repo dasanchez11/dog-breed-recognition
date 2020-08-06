@@ -1,25 +1,29 @@
 {
   "files": {
-    "main.css": "/dog-breed-recognition/static/css/main.3c9457cb.chunk.css",
-    "main.js": "/dog-breed-recognition/static/js/main.49a0e00a.chunk.js",
-    "main.js.map": "/dog-breed-recognition/static/js/main.49a0e00a.chunk.js.map",
+    "main.css": "/dog-breed-recognition/static/css/main.eedca4e3.chunk.css",
+    "main.js": "/dog-breed-recognition/static/js/main.64e881de.chunk.js",
+    "main.js.map": "/dog-breed-recognition/static/js/main.64e881de.chunk.js.map",
     "runtime-main.js": "/dog-breed-recognition/static/js/runtime-main.95f1eb60.js",
     "runtime-main.js.map": "/dog-breed-recognition/static/js/runtime-main.95f1eb60.js.map",
     "static/css/2.3c03f26f.chunk.css": "/dog-breed-recognition/static/css/2.3c03f26f.chunk.css",
-    "static/js/2.e8704024.chunk.js": "/dog-breed-recognition/static/js/2.e8704024.chunk.js",
-    "static/js/2.e8704024.chunk.js.map": "/dog-breed-recognition/static/js/2.e8704024.chunk.js.map",
+    "static/js/2.82908733.chunk.js": "/dog-breed-recognition/static/js/2.82908733.chunk.js",
+    "static/js/2.82908733.chunk.js.map": "/dog-breed-recognition/static/js/2.82908733.chunk.js.map",
     "index.html": "/dog-breed-recognition/index.html",
-    "precache-manifest.8dd6eb366c54ffa1e49f2626f7ee8f19.js": "/dog-breed-recognition/precache-manifest.8dd6eb366c54ffa1e49f2626f7ee8f19.js",
+    "precache-manifest.9023f52479111eb397d90f402af7c152.js": "/dog-breed-recognition/precache-manifest.9023f52479111eb397d90f402af7c152.js",
     "service-worker.js": "/dog-breed-recognition/service-worker.js",
     "static/css/2.3c03f26f.chunk.css.map": "/dog-breed-recognition/static/css/2.3c03f26f.chunk.css.map",
-    "static/css/main.3c9457cb.chunk.css.map": "/dog-breed-recognition/static/css/main.3c9457cb.chunk.css.map",
-    "static/js/2.e8704024.chunk.js.LICENSE.txt": "/dog-breed-recognition/static/js/2.e8704024.chunk.js.LICENSE.txt"
+    "static/css/main.eedca4e3.chunk.css.map": "/dog-breed-recognition/static/css/main.eedca4e3.chunk.css.map",
+    "static/js/2.82908733.chunk.js.LICENSE.txt": "/dog-breed-recognition/static/js/2.82908733.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/dog-breed-recognition/static/media/Background.2a325f04.jpg",
+    "static/media/img1.jpeg": "/dog-breed-recognition/static/media/img1.5b8f64b1.jpeg",
+    "static/media/img2.jpeg": "/dog-breed-recognition/static/media/img2.78e3a109.jpeg",
+    "static/media/img4.png": "/dog-breed-recognition/static/media/img4.88d69b0c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.95f1eb60.js",
     "static/css/2.3c03f26f.chunk.css",
-    "static/js/2.e8704024.chunk.js",
-    "static/css/main.3c9457cb.chunk.css",
-    "static/js/main.49a0e00a.chunk.js"
+    "static/js/2.82908733.chunk.js",
+    "static/css/main.eedca4e3.chunk.css",
+    "static/js/main.64e881de.chunk.js"
   ]
 }
