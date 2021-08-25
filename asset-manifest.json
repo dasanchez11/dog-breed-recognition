@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/dog-breed-recognition/static/css/main.eedca4e3.chunk.css",
-    "main.js": "/dog-breed-recognition/static/js/main.64e881de.chunk.js",
-    "main.js.map": "/dog-breed-recognition/static/js/main.64e881de.chunk.js.map",
+    "main.css": "/dog-breed-recognition/static/css/main.f2fd873a.chunk.css",
+    "main.js": "/dog-breed-recognition/static/js/main.e5e0722e.chunk.js",
+    "main.js.map": "/dog-breed-recognition/static/js/main.e5e0722e.chunk.js.map",
     "runtime-main.js": "/dog-breed-recognition/static/js/runtime-main.95f1eb60.js",
     "runtime-main.js.map": "/dog-breed-recognition/static/js/runtime-main.95f1eb60.js.map",
     "static/css/2.3c03f26f.chunk.css": "/dog-breed-recognition/static/css/2.3c03f26f.chunk.css",
-    "static/js/2.82908733.chunk.js": "/dog-breed-recognition/static/js/2.82908733.chunk.js",
-    "static/js/2.82908733.chunk.js.map": "/dog-breed-recognition/static/js/2.82908733.chunk.js.map",
+    "static/js/2.3a3bf597.chunk.js": "/dog-breed-recognition/static/js/2.3a3bf597.chunk.js",
+    "static/js/2.3a3bf597.chunk.js.map": "/dog-breed-recognition/static/js/2.3a3bf597.chunk.js.map",
     "index.html": "/dog-breed-recognition/index.html",
-    "precache-manifest.9023f52479111eb397d90f402af7c152.js": "/dog-breed-recognition/precache-manifest.9023f52479111eb397d90f402af7c152.js",
+    "precache-manifest.490e0a0ca0dd12b5b7df835cf95cdd99.js": "/dog-breed-recognition/precache-manifest.490e0a0ca0dd12b5b7df835cf95cdd99.js",
     "service-worker.js": "/dog-breed-recognition/service-worker.js",
     "static/css/2.3c03f26f.chunk.css.map": "/dog-breed-recognition/static/css/2.3c03f26f.chunk.css.map",
-    "static/css/main.eedca4e3.chunk.css.map": "/dog-breed-recognition/static/css/main.eedca4e3.chunk.css.map",
-    "static/js/2.82908733.chunk.js.LICENSE.txt": "/dog-breed-recognition/static/js/2.82908733.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/dog-breed-recognition/static/media/Background.2a325f04.jpg",
-    "static/media/img1.jpeg": "/dog-breed-recognition/static/media/img1.5b8f64b1.jpeg",
-    "static/media/img2.jpeg": "/dog-breed-recognition/static/media/img2.78e3a109.jpeg",
-    "static/media/img4.png": "/dog-breed-recognition/static/media/img4.88d69b0c.png"
+    "static/css/main.f2fd873a.chunk.css.map": "/dog-breed-recognition/static/css/main.f2fd873a.chunk.css.map",
+    "static/js/2.3a3bf597.chunk.js.LICENSE.txt": "/dog-breed-recognition/static/js/2.3a3bf597.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/dog-breed-recognition/static/media/Background.984aea2e.jpg",
+    "static/media/img1.jpg": "/dog-breed-recognition/static/media/img1.4068a8bc.jpg",
+    "static/media/img2.jpg": "/dog-breed-recognition/static/media/img2.9d8dce40.jpg",
+    "static/media/img3.jpg": "/dog-breed-recognition/static/media/img3.c25b9a2e.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.95f1eb60.js",
     "static/css/2.3c03f26f.chunk.css",
-    "static/js/2.82908733.chunk.js",
-    "static/css/main.eedca4e3.chunk.css",
-    "static/js/main.64e881de.chunk.js"
+    "static/js/2.3a3bf597.chunk.js",
+    "static/css/main.f2fd873a.chunk.css",
+    "static/js/main.e5e0722e.chunk.js"
   ]
 }
