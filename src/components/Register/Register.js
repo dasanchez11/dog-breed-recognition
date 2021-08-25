@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 class Register extends React.Component {
   constructor(props){
@@ -42,7 +42,6 @@ class Register extends React.Component {
   }
 
   render(){
-    const {onRouteChange} = this.props;
     return (
       <article className="br3 bw2 ba dark-gray b--black-50 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center bg-blue o-80">
         <main className="pa4 black-80">

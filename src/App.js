@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
 import Navigation from './components/Navigation/Navigation';
-import Slider2 from './components/Slider/Slider2';
 import Logo from './components/Logo/Logo';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import Rank from './components/Rank/Rank';
@@ -11,6 +10,7 @@ import Register from './components/Register/Register'
 
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import Probabilities from './components/Probabilities/Probabilities';
+import axios from 'axios'
 
 
 
@@ -33,6 +33,7 @@ import Probabilities from './components/Probabilities/Probabilities';
 const initialState = {
   input:'',
   imageUrl:'',
+  prediction:"",
   imagemessage:'',
   final: false,
   box:{},
@@ -53,7 +54,7 @@ class App extends Component {
     this.state = initialState;
     }
 
-
+  
   loadUser = (data) =>{
     this.setState({user:{
       id:data.id,
@@ -96,18 +97,19 @@ displayProbabilities = (box) =>{
     //this.setState({input:event.target.files[0]});
   }
 
+  
   onButtonSubmit = ()=>{
     this.setState({imageUrl:this.state.input})
     this.setState({final:true})
     let message = {
                 image: this.state.imagemessage
             }
-          fetch('https://stark-castle-65949.herokuapp.com/predecir',{
-            method:'post',
-            headers:{'Content-Type':'application/json'},
-            body: JSON.stringify(message)
+          axios.post('https://machinelearningpred.herokuapp.com/predict_dog_breed',{
+            data: JSON.stringify(message.image)
           })
-        .then(response => response.json())
+        .then(response => {
+          this.setState({prediction:response.data.prediction})
+          return response})
         .then(response => {
           if(response){
             fetch('https://limitless-wave-40652.herokuapp.com/image',{
@@ -123,7 +125,6 @@ displayProbabilities = (box) =>{
             })
             .catch(console.log())
           }
-          this.displayProbabilities(this.calculateProbabilities(response))
         }).catch(err => console.log(err));
   }
 
@@ -150,6 +151,16 @@ displayProbabilities = (box) =>{
             <Rank name={this.state.user.name} entries={this.state.user.entries}/>
             <ImageLinkForm onInputChange={this.onInputChange} onButtonSubmit={this.onButtonSubmit}/>
             <Probabilities box={box} final={final}/>
+            <div style={{borderRadius:'4px',height:'300px', width:'300px', backgroundColor: 'black',opacity:'0.8', color:'white',display:'flex',flexDirection:'column',justifyContent:'center',textAlign:'center',margin: '10px auto'}}> 
+                {this.state.prediction.split(';').map((pred,idx)=>{
+                  return(
+                    <div style={{display:'flex',flexDirection:'column', alignSelf:'center',margin:'1px auto', padding:'10px 0'}} key={idx}>
+                      {pred}
+                    </div>
+                  )
+                })
+                }              
+            </div>
             <FaceRecognition imageUrl={imageUrl}/>
 
           </div>

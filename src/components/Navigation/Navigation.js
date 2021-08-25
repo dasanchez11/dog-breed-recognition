@@ -1,5 +1,5 @@
 import React from 'react'
-import Slider2 from '../Slider/Slider2';
+import Slider from '../Slider/Slider';
 
 const Navigation = ({onRouteChange,isSignedIn}) =>{
     if (isSignedIn){
@@ -21,7 +21,7 @@ const Navigation = ({onRouteChange,isSignedIn}) =>{
               <p onClick={() => onRouteChange('register')} className='f3 link dim white underline pa3 pointer dib'> Register </p>
             </div>
           </nav>
-          <Slider2/>
+          <Slider/>
         </div>
 
   )
